@@ -1,262 +1,425 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Premium modern website for a neurologist highlighting expertise, services, patient care, and appointment booking."
-    />
-    <title>Dr. Arjun Mehta | Consultant Neurologist</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Dr. Arjun Mehta home">
-        <span class="brand-mark">AM</span>
-        <span>
-          <strong>Dr. Arjun Mehta</strong>
-          <small>Consultant Neurologist</small>
-        </span>
-      </a>
-      <nav class="main-nav" aria-label="Primary navigation">
-        <a href="#expertise">Expertise</a>
-        <a href="#care">Care</a>
-        <a href="#doctor">Doctor</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="header-action" href="#contact">Book Visit</a>
-    </header>
+<head>
 
-    <main>
-      <section class="hero" id="home" aria-label="Neurologist profile">
-        <img src="assets/neurology-hero.png" alt="Neurologist consulting a patient in a modern clinic" />
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Advanced neurological care</p>
-          <h1>Precision diagnosis. Calm guidance. Better brain health.</h1>
-          <p class="hero-copy">
-            A premium neurology practice for patients seeking expert care for stroke, epilepsy,
-            migraine, movement disorders, neuropathy, memory concerns, and complex neurological symptoms.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact">Schedule Consultation</a>
-            <a class="btn secondary" href="#expertise">View Expertise</a>
-          </div>
-        </div>
-      </section>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1435017618453237');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1435017618453237&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <section class="trust-band" aria-label="Practice highlights">
-        <div>
-          <strong>18+</strong>
-          <span>Years clinical experience</span>
-        </div>
-        <div>
-          <strong>12k+</strong>
-          <span>Patients evaluated</span>
-        </div>
-        <div>
-          <strong>24 hr</strong>
-          <span>Stroke response guidance</span>
-        </div>
-        <div>
-          <strong>4.9</strong>
-          <span>Patient satisfaction rating</span>
-        </div>
-      </section>
+  <title>Gautam ji | Market Analysis</title>
 
-      <section class="section intro" id="expertise">
-        <div class="section-heading">
-          <p class="eyebrow">Expertise</p>
-          <h2>Neurological care with clarity, depth, and discretion.</h2>
-        </div>
-        <div class="intro-copy">
-          <p>
-            Dr. Mehta combines detailed clinical evaluation, evidence-based treatment planning,
-            and advanced neurodiagnostics to help patients understand what is happening and what
-            to do next.
-          </p>
-        </div>
-      </section>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
 
-      <section class="expertise-grid" aria-label="Neurology expertise areas">
-        <article>
-          <span class="icon">01</span>
-          <h3>Stroke & TIA</h3>
-          <p>Rapid evaluation, prevention strategy, risk-factor control, and recovery planning after stroke or transient ischemic attack.</p>
-        </article>
-        <article>
-          <span class="icon">02</span>
-          <h3>Epilepsy & Seizures</h3>
-          <p>Diagnosis, EEG review, medication optimization, lifestyle counseling, and long-term seizure management.</p>
-        </article>
-        <article>
-          <span class="icon">03</span>
-          <h3>Migraine & Headache</h3>
-          <p>Personalized treatment for migraine, cluster headache, tension headache, medication overuse, and facial pain syndromes.</p>
-        </article>
-        <article>
-          <span class="icon">04</span>
-          <h3>Parkinson's & Movement</h3>
-          <p>Care for tremor, Parkinson's disease, dystonia, gait disorders, and medication-related movement changes.</p>
-        </article>
-        <article>
-          <span class="icon">05</span>
-          <h3>Memory & Cognitive Care</h3>
-          <p>Assessment for memory loss, dementia, cognitive decline, sleep-related confusion, and reversible neurological causes.</p>
-        </article>
-        <article>
-          <span class="icon">06</span>
-          <h3>Nerve & Muscle Disorders</h3>
-          <p>Evaluation of neuropathy, numbness, weakness, radiculopathy, myopathy, and neuromuscular conditions.</p>
-        </article>
-      </section>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      <section class="section split" id="care">
-        <div class="feature-panel">
-          <p class="eyebrow">Patient journey</p>
-          <h2>Every visit is structured around answers.</h2>
-          <p>
-            From the first consultation to follow-up care, the process is designed to reduce uncertainty,
-            explain options clearly, and build a treatment plan that fits the patient's life.
-          </p>
-          <ul class="check-list">
-            <li>Detailed neurological examination and symptom timeline</li>
-            <li>Review of MRI, CT, EEG, EMG, and laboratory reports</li>
-            <li>Medication planning with prevention and safety counseling</li>
-            <li>Coordinated referrals for rehabilitation or specialty procedures</li>
-          </ul>
-        </div>
-        <div class="care-stack" aria-label="Services">
-          <div>
-            <span>Consultation</span>
-            <strong>Comprehensive neuro evaluation</strong>
-          </div>
-          <div>
-            <span>Diagnostics</span>
-            <strong>EEG, EMG/NCS, neuroimaging review</strong>
-          </div>
-          <div>
-            <span>Treatment</span>
-            <strong>Modern medication and prevention plans</strong>
-          </div>
-          <div>
-            <span>Continuity</span>
-            <strong>Follow-up, monitoring, and family education</strong>
-          </div>
-        </div>
-      </section>
+    body {
+      min-height: 100vh;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(20, 153, 112, .13), transparent 30%),
+        #02110d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 15px;
+    }
 
-      <section class="doctor-section" id="doctor">
-        <div class="doctor-bio">
-          <p class="eyebrow">About the neurologist</p>
-          <h2>Dr. Arjun Mehta, MD, DM Neurology</h2>
-          <p>
-            A board-certified consultant neurologist known for careful diagnosis, warm communication,
-            and treatment plans that balance medical precision with patient comfort.
-          </p>
-          <div class="credentials">
-            <span>MD Internal Medicine</span>
-            <span>DM Neurology</span>
-            <span>Fellowship in Stroke Medicine</span>
-            <span>Member, Indian Academy of Neurology</span>
-          </div>
-        </div>
-        <aside class="quote-card">
-          <p>
-            "The best neurology care begins with listening closely. Symptoms often tell a story
-            before the scan does."
-          </p>
-          <span>Dr. Arjun Mehta</span>
-        </aside>
-      </section>
+    .page {
+      width: 100%;
+      max-width: 430px;
+      min-height: 810px;
+      padding: 30px;
+      border-radius: 29px;
 
-      <section class="section testimonials" aria-label="Patient testimonials">
-        <div class="section-heading">
-          <p class="eyebrow">Patient experience</p>
-          <h2>Trusted for calm, thorough, and respectful care.</h2>
-        </div>
-        <div class="testimonial-grid">
-          <article>
-            <p>"The consultation was detailed and reassuring. My migraine plan finally made sense."</p>
-            <span>Patient with chronic migraine</span>
-          </article>
-          <article>
-            <p>"He explained the stroke risk clearly and helped our family understand every next step."</p>
-            <span>Family consultation</span>
-          </article>
-          <article>
-            <p>"Professional, patient, and extremely thorough with my father's memory assessment."</p>
-            <span>Caregiver feedback</span>
-          </article>
-        </div>
-      </section>
+      background:
+        linear-gradient(
+          145deg,
+          rgba(24, 69, 56, .88),
+          rgba(11, 27, 23, .96) 48%,
+          rgba(21, 71, 56, .9)
+        );
 
-      <section class="contact-section" id="contact">
-        <div>
-          <p class="eyebrow">Appointments</p>
-          <h2>Book a consultation with the neurology clinic.</h2>
-          <p>
-            Share your symptoms, reports, and preferred visit time. The clinic team will confirm
-            availability and guide you on what to bring.
-          </p>
-        </div>
-        <form class="contact-form" aria-label="Appointment request form">
-          <label>
-            Full name
-            <input type="text" name="name" placeholder="Your name" />
-          </label>
-          <label>
-            Phone number
-            <input type="tel" name="phone" placeholder="+91 98765 43210" />
-          </label>
-          <label>
-            Main concern
-            <select name="concern">
-              <option>Migraine or headache</option>
-              <option>Stroke or TIA</option>
-              <option>Seizure or epilepsy</option>
-              <option>Memory concern</option>
-              <option>Numbness or weakness</option>
-              <option>Other neurological symptom</option>
-            </select>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" placeholder="Briefly describe your symptoms"></textarea>
-          </label>
-          <button type="submit">Request Appointment</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </section>
-    </main>
+      border: 1px solid rgba(35, 194, 147, .35);
 
-    <footer class="site-footer">
-      <div>
-        <strong>Dr. Arjun Mehta Neurology</strong>
-        <span>Premium neurological consultation and long-term care.</span>
+      box-shadow:
+        0 0 45px rgba(0, 255, 174, .06),
+        inset 0 0 35px rgba(0, 255, 174, .025);
+
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      top: -100px;
+      left: -100px;
+      background: rgba(0, 255, 170, .06);
+      filter: blur(60px);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* Badge */
+
+    .badge {
+      display: inline-block;
+      padding: 8px 17px;
+      border-radius: 30px;
+      border: 1px solid #1e9c76;
+      color: #58e5b7;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: rgba(0, 160, 115, .08);
+    }
+
+    /* Profile */
+
+    .profile-wrapper {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 25px;
+      padding: 4px;
+      border-radius: 50%;
+      background: linear-gradient(
+        135deg,
+        #00e7a0,
+        #00b879,
+        #baffdf
+      );
+
+      box-shadow:
+        0 0 12px #00d996,
+        0 0 35px rgba(0, 255, 178, .45);
+    }
+
+    .profile {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      border: 3px solid #073b2d;
+    }
+
+    /* Heading */
+
+    h1 {
+      font-size: 28px;
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: #53dfb0;
+    }
+
+    .subtitle {
+      color: #d5dfdc;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    /* Stats */
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 19px;
+    }
+
+    .stat {
+      min-height: 74px;
+      border: 1px solid rgba(34, 164, 125, .25);
+      border-radius: 14px;
+      background: rgba(3, 32, 25, .52);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .stat strong {
+      color: #57e4b5;
+      font-size: 19px;
+      font-weight: 800;
+    }
+
+    .stat small {
+      color: #d7e2df;
+      font-size: 11px;
+      margin-top: 1px;
+    }
+
+    /* Categories */
+
+    .categories {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .category {
+      min-height: 49px;
+      border-radius: 12px;
+      border: 1px solid rgba(100, 135, 125, .18);
+      background: rgba(35, 48, 44, .6);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #f4f7f6;
+      font-size: 13px;
+      font-weight: 500;
+
+      transition: .25s ease;
+    }
+
+    .category:hover {
+      transform: translateY(-2px);
+      border-color: #28bd91;
+      background: rgba(30, 90, 72, .5);
+    }
+
+    /* CTA */
+
+    .cta {
+      width: 100%;
+      min-height: 57px;
+      border: 0;
+      border-radius: 14px;
+
+      background: linear-gradient(
+        100deg,
+        #11bd87,
+        #36d39f
+      );
+
+      color: #031710;
+      font-size: 14px;
+      font-weight: 900;
+      font-family: inherit;
+
+      cursor: pointer;
+      text-decoration: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      box-shadow:
+        0 0 20px rgba(0, 224, 157, .28);
+
+      transition: .25s ease;
+      margin-bottom: 18px;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px) scale(1.01);
+      box-shadow:
+        0 0 30px rgba(0, 224, 157, .45);
+    }
+
+    .cta:active {
+      transform: scale(.98);
+    }
+
+    /* Bottom box */
+
+    .info-box {
+      border: 1px solid rgba(70, 169, 137, .4);
+      background: rgba(55, 102, 87, .28);
+      border-radius: 13px;
+
+      padding: 14px 12px;
+
+      color: #e5ece9;
+      font-size: 12.5px;
+      line-height: 1.75;
+    }
+
+    .info-box div {
+      margin: 1px 0;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 450px) {
+      body {
+        padding: 12px;
+      }
+
+      .page {
+        padding: 28px 18px;
+        border-radius: 25px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .profile-wrapper {
+        width: 112px;
+        height: 112px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      h1 {
+        font-size: 23px;
+      }
+
+      .subtitle {
+        font-size: 12px;
+      }
+
+      .stat strong {
+        font-size: 16px;
+      }
+
+      .category {
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- Top Badge -->
+    <div class="badge">
+      SEBI Registered Research Analyst
+    </div>
+
+    <!-- Profile Image -->
+    <div class="profile-wrapper">
+      <img
+        src="https://stocklearnercommunity.lovable.app/__l5e/assets-v1/8ba98e56-a6b2-4fd6-a942-492b5a7969de/stock-learners-profile.png"
+        alt="Mehta Back 3.0"
+        class="profile"
+      >
+    </div>
+
+    <!-- Name -->
+    <h1>
+      Gautam <span>Learner</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="subtitle">
+      Fast & Accurate Market Analysis • Nifty • Bank Nifty •
+      <br>
+      Options Trading
+    </p>
+
+    <!-- Stats -->
+    <section class="stats">
+
+      <div class="stat">
+        <strong>60K+</strong>
+        <small>Members</small>
       </div>
-      <div>
-        <span>Mon-Sat, 9:00 AM - 6:00 PM</span>
-        <span>NeuroCare Center, Medical District</span>
-        <span>+91 98765 43210</span>
-      </div>
-    </footer>
-    <script>
-      const form = document.querySelector(".contact-form");
-      const status = document.querySelector(".form-status");
 
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        status.textContent = "Thank you. The clinic team will contact you to confirm the appointment.";
-        form.reset();
-      });
-    </script>
-  </body>
+      <div class="stat">
+        <strong>SEBI</strong>
+        <small>Registered</small>
+      </div>
+
+      <div class="stat">
+        <strong>FREE</strong>
+        <small>Join</small>
+      </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+
+      <div class="category">
+        📈 Nifty Calls
+      </div>
+
+      <div class="category">
+        🏦 Bank Nifty
+      </div>
+
+      <div class="category">
+        💹 Finnifty
+      </div>
+
+      <div class="category">
+        📊 Swing Trades
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <a
+      href="https://t.me/+FSa0DVqGj-s4ZjQ1"
+      target="_blank"
+      class="cta"
+    >
+      🚀 &nbsp; JOIN TELEGRAM FREE
+    </a>
+
+    <!-- Information -->
+    <div class="info-box">
+
+      <div>
+        🔥 Daily Market Research & High Probability Trade Setups
+      </div>
+
+      <div>
+        ⚡ Bank Nifty • Nifty • Options Trading Signals
+      </div>
+
+      <div>
+        🚀 Trusted by 60,000+ Traders
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
 </html>
